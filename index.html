@@ -1,106 +1,246 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raffaello - AI Web Builder</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js" integrity="sha512-iZkSskGK6ztK3mG293FyahxuEzQjj/qpKBnvMCoXD42sBLOd3ljqCt4nZWbS2YYAEQiNMex832AhAU4nFILWoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css" referrerpolicy="no-referrer">
+    <title>DigitalX - Transforming Your Digital Presence</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Custom CSS for animations and effects */
+        .hero-gradient {
+            background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+        }
+        .cta-button {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-item:hover .service-icon {
+            transform: translateY(-5px);
+        }
+        .testimonial-card {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .accordion-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            text-align: left;
+            background-color: #f9fafb;
+            color: #374151;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .accordion-button:hover {
+            background-color: #edf2f7;
+        }
+        .accordion-content {
+            padding: 1rem;
+            background-color: #fff;
+            color: #6b7280;
+            display: none;
+        }
+        .accordion-button.active + .accordion-content {
+            display: block;
+        }
+    </style>
 </head>
-<body class="bg-base-200">
+<body class="bg-gray-50 font-sans">
 
-    <header class="navbar bg-base-100 shadow-md">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Features</a></li>
-                    <li><a>Pricing</a></li>
-                    <li><a>About</a></li>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto py-4 px-5 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">DigitalX</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-500">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Contact</a></li>
                 </ul>
-            </div>
-            <a class="btn btn-ghost normal-case text-xl">Raffaello</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a>Features</a></li>
-                <li><a>Pricing</a></li>
-                <li><a>About</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <a class="btn">Get Started</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container mx-auto py-12">
+    <main class="container mx-auto mt-10">
 
-        <section class="hero bg-base-100 rounded-box shadow-md mb-8">
-            <div class="hero-content text-center">
-                <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Build Your Dream Website with AI</h1>
-                    <p class="py-6">Raffaello is an AI-powered web builder that helps you create stunning websites in minutes. No coding required!</p>
-                    <button class="btn btn-primary">Start Building Now</button>
+        <!-- Hero Section -->
+        <section class="hero hero-gradient rounded-lg py-20 px-8 text-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl font-bold mb-4">Transforming Your Digital Presence</h1>
+                    <p class="text-lg mb-6">Innovative solutions and personalized strategies to elevate your brand.</p>
+                    <a href="#" class="cta-button bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 rounded-md inline-block">Get Started Today</a>
+                </div>
+                <div>
+                    <img src="https://placehold.co/500x300/ffffff/000000" alt="DigitalX Hero Image" class="rounded-lg shadow-md">
                 </div>
             </div>
         </section>
 
-        <section class="py-8">
-            <h2 class="text-3xl font-semibold text-center mb-4">Key Features</h2>
+        <!-- Features & Services -->
+        <section class="services mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="service-item bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-2"><i class="fas fa-code"></i></div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Web Development</h3>
+                    <p class="text-gray-600">Custom web solutions tailored to your business needs.</p>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-2"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600">Drive growth with data-driven marketing strategies.</p>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-2"><i class="fas fa-palette"></i></div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Branding</h3>
+                    <p class="text-gray-600">Craft a unique brand identity that resonates with your audience.</p>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-2"><i class="fas fa-user-interface"></i></div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">UX/UI Design</h3>
+                    <p class="text-gray-600">Intuitive and engaging user experiences that drive results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo/Portfolio Preview -->
+        <section class="portfolio mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Recent Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card bg-base-100 shadow-md">
-                    <div class="card-body">
-                        <h3 class="card-title">AI-Powered Design</h3>
-                        <p>Our AI algorithms generate beautiful and responsive website designs tailored to your needs.</p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/400x300" alt="Project 1" class="rounded-md">
+                    <h3 class="text-xl font-semibold text-blue-700 mt-2">Project Title 1</h3>
                 </div>
-                <div class="card bg-base-100 shadow-md">
-                    <div class="card-body">
-                        <h3 class="card-title">Drag-and-Drop Editor</h3>
-                        <p>Easily customize your website with our intuitive drag-and-drop editor.</p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/400x300" alt="Project 2" class="rounded-md">
+                    <h3 class="text-xl font-semibold text-blue-700 mt-2">Project Title 2</h3>
                 </div>
-                <div class="card bg-base-100 shadow-md">
-                    <div class="card-body">
-                        <h3 class="card-title">SEO Optimization</h3>
-                        <p>Improve your website's visibility with our built-in SEO tools.</p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/400x300" alt="Project 3" class="rounded-md">
+                    <h3 class="text-xl font-semibold text-blue-700 mt-2">Project Title 3</h3>
                 </div>
             </div>
         </section>
 
-        <section class="bg-primary text-white py-12 rounded-box">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
-                <p class="text-lg mb-8">Join thousands of satisfied users and build your dream website today!</p>
-                <button class="btn btn-secondary">Sign Up Now</button>
+        <!-- Testimonials & Client Reviews -->
+        <section class="testimonials mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Client Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6">
+                    <img src="https://placehold.co/50x50" alt="Client 1" class="rounded-full mb-2">
+                    <p class="text-gray-700">"DigitalX transformed our online presence. Highly recommended!"</p>
+                    <p class="text-sm font-semibold text-blue-600">- John Doe, CEO</p>
+                </div>
+                <div class="testimonial-card bg-white rounded-lg shadow-md p-6">
+                    <img src="https://placehold.co/50x50" alt="Client 2" class="rounded-full mb-2">
+                    <p class="text-gray-700">"Exceptional service and results. DigitalX is a true partner."</p>
+                    <p class="text-sm font-semibold text-blue-600">- Jane Smith, Marketing Director</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & Packages -->
+        <section class="pricing mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Pricing &amp; Packages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Basic</h3>
+                    <p class="text-gray-600">Essential features for startups.</p>
+                    <p class="text-2xl font-bold text-blue-800">$99/month</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Standard</h3>
+                    <p class="text-gray-600">Comprehensive solutions for growing businesses.</p>
+                    <p class="text-2xl font-bold text-blue-800">$299/month</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Premium</h3>
+                    <p class="text-gray-600">Advanced features and dedicated support.</p>
+                    <p class="text-2xl font-bold text-blue-800">$599/month</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Mission -->
+        <section class="about mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">About DigitalX</h2>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <p class="text-gray-700">DigitalX is a cutting-edge digital agency dedicated to providing innovative solutions and personalized strategies to help businesses thrive in the digital age. Our mission is to transform your digital presence and drive sustainable growth.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="accordion-item">
+                    <button class="accordion-button">What services do you offer?<span class="text-xl">+</span></button>
+                    <div class="accordion-content">We offer a wide range of digital services, including web development, digital marketing, branding, and UX/UI design.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">How do you approach a new project?<span class="text-xl">+</span></button>
+                    <div class="accordion-content">We start with a thorough understanding of your business goals and target audience, then develop a customized strategy to achieve your objectives.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">What is your pricing structure?<span class="text-xl">+</span></button>
+                    <div class="accordion-content">We offer flexible pricing packages tailored to your specific needs and budget. Contact us for a personalized quote.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA & Contact -->
+        <section class="contact mt-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Ready to Transform Your Digital Presence?</h2>
+            <div class="text-center">
+                <a href="#" class="cta-button bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 rounded-md inline-block">Request a Quote</a>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer p-10 bg-base-200 text-base-content">
-        <nav>
-            <header class="footer-title">Services</header> 
-            <a class="link link-hover">Branding</a>
-            <a class="link link-hover">Design</a>
-            <a class="link link-hover">Marketing</a>
-            <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-            <header class="footer-title">Company</header> 
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Jobs</a>
-            <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-            <header class="footer-title">Legal</header> 
-            <a class="link link-hover">Terms of use</a>
-            <a class="link link-hover">Privacy policy</a>
-            <a class="link link-hover">Cookie policy</a>
-        </nav>
+    <footer class="bg-gray-200 mt-12 py-4 text-center">
+        <div class="container mx-auto">
+            <nav class="mb-2">
+                <ul class="flex justify-center space-x-6">
+                    <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-gray-600 mt-2">© 2023 DigitalX. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+            });
+        });
+    </script>
 
 
 </body></html>
