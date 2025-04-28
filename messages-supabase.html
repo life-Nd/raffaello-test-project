@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .pricing-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <header class="hero py-20 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Build Stunning Websites Instantly — Powered by the World's Most Intelligent AI</h1>
+            <p class="text-lg mb-8">raffaello Revolutionize your website creation process with our AI-powered platform. Effortless design, unparalleled performance.</p>
+            <a href="#" class="bg-white text-green-500 font-bold py-3 px-8 rounded-full hover:bg-green-200">Get Started Free</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mt-4">Easiest to Use</h3>
+                    <p class="text-gray-600">Intuitive interface for seamless website creation.</p>
+                </div>
+                <div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8V16m0 2a2 2 0 100 4m0-4a2 2 0 110 4m12-8V16m0 2a2 2 0 100 4m0-4a2 2 0 110 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mt-4">Most Powerful AI</h3>
+                    <p class="text-gray-600">Advanced AI algorithms for optimal website design.</p>
+                </div>
+                <div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mt-4">Faster than Competitors</h3>
+                    <p class="text-gray-600">Create websites faster than ever before.</p>
+                </div>
+                <div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m16 0h-2M5 15H3m16 0h-2M10 3a1.5 1.5 0 00-1.5 1.5V5.1m6.002-2.1a1.5 1.5 0 011.5 1.5V5.1m6.002 2.1h-1.5a1.5 1.5 0 00-1.5 1.5V11.1m-6.002-2.1h-1.5a1.5 1.5 0 01-1.5 1.5V11.1m6.002 2.1h-1.5a1.5 1.5 0 00-1.5 1.5v2.1m6.002-2.1h-1.5a1.5 1.5 0 01-1.5 1.5v2.1M5 21a1.5 1.5 0 01-1.5-1.5V19.1m16.002 0a1.5 1.5 0 00-1.5-1.5V19.1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium mt-4">Unlimited Customization</h3>
+                    <p class="text-gray-600">Tailor your website to your exact specifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">See the AI in Action</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen="" class="mx-auto"></iframe>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">"The easiest website builder I've ever used! The AI is incredibly intuitive and the results are stunning."</p>
+                    <p class="font-semibold">- John Doe, Entrepreneur</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">"I was able to create a professional website in minutes. The AI suggestions were spot on and saved me so much time."</p>
+                    <p class="font-semibold">- Jane Smith, Small Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Flexible Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md pricing-card">
+                    <h3 class="text-2xl font-medium mb-4">Basic</h3>
+                    <p class="text-gray-600 mb-4">Perfect for personal websites.</p>
+                    <p class="text-4xl font-bold">$9/month</p>
+                    <a href="#" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full mt-4 hover:bg-blue-700 block">Get Started</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md pricing-card">
+                    <h3 class="text-2xl font-medium mb-4">Pro</h3>
+                    <p class="text-gray-600 mb-4">Ideal for small businesses.</p>
+                    <p class="text-4xl font-bold">$19/month</p>
+                    <a href="#" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full mt-4 hover:bg-blue-700 block">Get Started</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md pricing-card">
+                    <h3 class="text-2xl font-medium mb-4">Enterprise</h3>
+                    <p class="text-gray-600 mb-4">For large organizations.</p>
+                    <p class="text-4xl font-bold">$49/month</p>
+                    <a href="#" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full mt-4 hover:bg-blue-700 block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">About the Platform</h2>
+            <p class="text-gray-700 leading-relaxed text-center">
+                Our mission is to democratize website creation by providing an AI-powered platform that is both easy to use and incredibly powerful. We believe everyone should have the ability to create a stunning website without needing to learn complex coding or design skills. Our user-centric design and innovative AI algorithms make website creation accessible to all.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-medium mb-2">How does the AI work?</h3>
+                    <p class="text-gray-700">Our AI uses advanced machine learning algorithms to analyze your content and suggest the best design elements for your website.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-2">Can I integrate with other platforms?</h3>
+                    <p class="text-gray-700">Yes, our platform integrates seamlessly with a variety of popular tools and services.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-2">Is my data secure?</h3>
+                    <p class="text-gray-700">We take data security very seriously and employ industry-leading security measures to protect your information.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-2">What kind of support do you offer?</h3>
+                    <p class="text-gray-700">We offer 24/7 support via email, chat, and phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-green-100 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Ready to Build Your Dream Website?</h2>
+            <a href="#" class="bg-green-500 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700">Start Building Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div>
+                <h4 class="font-semibold mb-2">Features</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-gray-300">AI Design</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Customization</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Integrations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Pricing</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-gray-300">Plans</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Compare</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Support</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-gray-300">FAQ</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Stay Updated</h4>
+                <p>Sign up for our newsletter:</p>
+                <input type="email" placeholder="Your email" class="bg-gray-700 text-white p-2 rounded-md mb-2">
+                <button class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-700">Subscribe</button>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>© 2024 AI Web Builder. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body></html>
