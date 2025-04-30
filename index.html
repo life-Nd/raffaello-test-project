@@ -1,1 +1,442 @@
-PCFET0NUWVBFIGh0bWw+PGh0bWwgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIGxhbmc9ImVuIj48aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KICAgIDx0aXRsZT5EaWdpdGFsWCAtIFRyYW5zZm9ybWluZyBZb3VyIERpZ2l0YWwgUHJlc2VuY2U8L3RpdGxlPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL3RhaWx3aW5kY3NzQDIuMi4xOS9kaXN0L3RhaWx3aW5kLm1pbi5jc3MiPgogICAgPHN0eWxlPgogICAgICAvKiBDdXN0b20gQ1NTIGZvciBhbmltYXRpb25zIGFuZCBlZmZlY3RzICovCiAgICAgIC5oZXJvLWdyYWRpZW50IHsKICAgICAgICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg0NWRlZywgIzFlM2E4YSwgIzNiODJmNik7CiAgICAgIH0KICAgICAgLmN0YS1idXR0b24gewogICAgICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuM3MgZWFzZS1pbi1vdXQsIGJveC1zaGFkb3cgMC4zcyBlYXNlLWluLW91dDsKICAgICAgfQogICAgICAuY3RhLWJ1dHRvbjpob3ZlciB7CiAgICAgICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMDUpOwogICAgICAgICAgYm94LXNoYWRvdzogMCA0cHggNnB4IHJnYmEoMCwgMCwgMCwgMC4xKTsKICAgICAgfQogICAgICAuc2VydmljZS1pY29uIHsKICAgICAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjNzIGVhc2UtaW4tb3V0OwogICAgICB9CiAgICAgIC5zZXJ2aWNlLWl0ZW06aG92ZXIgLnNlcnZpY2UtaWNvbiB7CiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTVweCk7CiAgICAgIH0KICAgICAgLnRlc3RpbW9uaWFsLWNhcmQgewogICAgICAgICAgYW5pbWF0aW9uOiBmYWRlSW4gMC41cyBlYXNlLWluLW91dDsKICAgICAgfQogICAgICBAa2V5ZnJhbWVzIGZhZGVJbiB7CiAgICAgICAgICBmcm9tIHsgb3BhY2l0eTogMDsgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDIwcHgpOyB9CiAgICAgICAgICB0byB7IG9wYWNpdHk6IDE7IHRyYW5zZm9ybTogdHJhbnNsYXRlWSgwKTsgfQogICAgICB9CiAgICAgIC5hY2NvcmRpb24taXRlbSB7CiAgICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2U1ZTdlYjsKICAgICAgfQogICAgICAuYWNjb3JkaW9uLWJ1dHRvbiB7CiAgICAgICAgICBkaXNwbGF5OiBmbGV4OwogICAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOwogICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICAgICAgICAgIHdpZHRoOiAxMDAlOwogICAgICAgICAgcGFkZGluZzogMXJlbTsKICAgICAgICAgIHRleHQtYWxpZ246IGxlZnQ7CiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjlmYWZiOwogICAgICAgICAgY29sb3I6ICMzNzQxNTE7CiAgICAgICAgICBmb250LXdlaWdodDogNjAwOwogICAgICAgICAgYm9yZGVyOiBub25lOwogICAgICAgICAgb3V0bGluZTogbm9uZTsKICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjsKICAgICAgfQogICAgICAuYWNjb3JkaW9uLWJ1dHRvbjpob3ZlciB7CiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWRmMmY3OwogICAgICB9CiAgICAgIC5hY2NvcmRpb24tY29udGVudCB7CiAgICAgICAgICBwYWRkaW5nOiAxcmVtOwogICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsKICAgICAgICAgIGNvbG9yOiAjNmI3MjgwOwogICAgICAgICAgZGlzcGxheTogbm9uZTsKICAgICAgfQogICAgICAuYWNjb3JkaW9uLWJ1dHRvbi5hY3RpdmUgKyAuYWNjb3JkaW9uLWNvbnRlbnQgewogICAgICAgICAgZGlzcGxheTogYmxvY2s7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9oZWFkPgogIDxib2R5IGNsYXNzPSJiZy1ncmF5LTUwIGZvbnQtc2FucyI+CiAgICA8aGVhZGVyIGNsYXNzPSJiZy13aGl0ZSBzaGFkb3ctbWQiPgogICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIgbXgtYXV0byBweS00IHB4LTUgZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIj4KICAgICAgICA8YSBocmVmPSIjIiBjbGFzcz0idGV4dC0yeGwgZm9udC1ib2xkIHRleHQtYmx1ZS02MDAiPkRpZ2l0YWxYPC9hPgogICAgICAgIDxuYXY+CiAgICAgICAgICA8dWwgY2xhc3M9ImZsZXggc3BhY2UteC02Ij4KICAgICAgICAgICAgPGxpPjxhIGhyZWY9IiMiIGNsYXNzPSJob3Zlcjp0ZXh0LWJsdWUtNTAwIj5TZXJ2aWNlczwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iIyIgY2xhc3M9ImhvdmVyOnRleHQtYmx1ZS01MDAiPkFib3V0PC9hPjwvbGk+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSIjIiBjbGFzcz0iaG92ZXI6dGV4dC1ibHVlLTUwMCI+Q29udGFjdDwvYT48L2xpPgogICAgICAgICAgPC91bD4KICAgICAgICA8L25hdj4KICAgICAgPC9kaXY+CiAgICA8L2hlYWRlcj4KCiAgICA8bWFpbiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8gbXQtMTAiPgogICAgICA8IS0tIEhlcm8gU2VjdGlvbiAtLT4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImJnLWdyYWRpZW50LXRvLXIgZnJvbS1wdXJwbGUtNTAwIHRvLWJsdWUtNTAwIHRleHQtd2hpdGUgcHktMjQgcHgtOCByb3VuZGVkLTN4bCBzaGFkb3ctMnhsIG92ZXJmbG93LWhpZGRlbiByZWxhdGl2ZSI+CiAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8gZ3JpZCBncmlkLWNvbHMtMSBtZDpncmlkLWNvbHMtMiBnYXAtOCBpdGVtcy1jZW50ZXIiPgogICAgICAgICAgPGRpdiBjbGFzcz0iei0xMCI+CiAgICAgICAgICAgIDxoMSBjbGFzcz0idGV4dC01eGwgZm9udC1leHRyYWJvbGQgbWItNCB0cmFja2luZy10aWdodCI+CiAgICAgICAgICAgICAgRWxldmF0ZSBZb3VyIEJyYW5kIHdpdGggRGlnaXRhbCBFeGNlbGxlbmNlCiAgICAgICAgICAgIDwvaDE+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXhsIG1iLTggbGVhZGluZy1yZWxheGVkIj4KICAgICAgICAgICAgICBXZSBjcmFmdCBpbm5vdmF0aXZlIGRpZ2l0YWwgc29sdXRpb25zIHRhaWxvcmVkIHRvIHlvdXIgdW5pcXVlCiAgICAgICAgICAgICAgbmVlZHMsIGRyaXZpbmcgZ3Jvd3RoIGFuZCBlbmdhZ2VtZW50LgogICAgICAgICAgICA8L3A+CiAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzPSJiZy13aGl0ZSB0ZXh0LXB1cnBsZS02MDAgZm9udC1zZW1pYm9sZCBweS0zIHB4LTYgcm91bmRlZC1mdWxsIGhvdmVyOmJnLXB1cnBsZS0xMDAgdHJhbnNpdGlvbi1jb2xvcnMgZHVyYXRpb24tMzAwIGlubGluZS1ibG9jayBzaGFkb3ctbWQiPkdldCBTdGFydGVkPC9hPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJyZWxhdGl2ZSI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUxOTM4OTk1MDQ3My00N2EwNGNhMDA1MmQ/aXhsaWI9cmItNC4wLjMmYW1wO2l4aWQ9TW53eE1qQTNmREI4TUh4d2FHOTBieTF3WVdkbGZIeDhmR1Z1ZkRCOGZIeDgmYW1wO2F1dG89Zm9ybWF0JmFtcDtmaXQ9Y3JvcCZhbXA7dz0xMTcwJmFtcDtxPTgwIiBhbHQ9Ik1vZGVybiBEaWdpdGFsIEludGVyZmFjZSIgY2xhc3M9InJvdW5kZWQtM3hsIHNoYWRvdy14bCBob3ZlcjpzY2FsZS0xMDUgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by10ciBmcm9tLXB1cnBsZS01MDAgdG8tYmx1ZS01MDAgb3BhY2l0eS0yMCByb3VuZGVkLTN4bCI+PC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJhYnNvbHV0ZSBib3R0b20tMCBsZWZ0LTAgdy1mdWxsIGgtMzIgYmctZ3JhZGllbnQtdG8tdCBmcm9tLWJsdWUtNTAwIHRvLXRyYW5zcGFyZW50Ij48L2Rpdj4KICAgICAgPC9zZWN0aW9uPgoKICAgICAgPCEtLSBGZWF0dXJlcyAmIFNlcnZpY2VzIC0tPgogICAgICA8c2VjdGlvbiBjbGFzcz0icHktMTYgYmctZ3JheS01MCI+CiAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8gcHgtNCI+CiAgICAgICAgICA8aDIgY2xhc3M9InRleHQtM3hsIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTgwMCBtYi0xMiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgIE91ciBTZXJ2aWNlcwogICAgICAgICAgPC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3M9ImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTQgZ2FwLTgiPgogICAgICAgICAgICA8IS0tIFNlcnZpY2UgSXRlbSAxIC0tPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZy13aGl0ZSByb3VuZGVkLXhsIHNoYWRvdy1tZCBvdmVyZmxvdy1oaWRkZW4gaG92ZXI6c2hhZG93LWxnIHRyYW5zaXRpb24tc2hhZG93IGR1cmF0aW9uLTMwMCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icC02Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRleHQtYmx1ZS02MDAgdGV4dC00eGwgbWItNCI+CiAgICAgICAgICAgICAgICAgIDxpIGNsYXNzPSJmYXMgZmEtY29kZSI+PC9pPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8aDMgY2xhc3M9InRleHQteGwgZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktODAwIG1iLTIiPgogICAgICAgICAgICAgICAgICBXZWIgRGV2ZWxvcG1lbnQKICAgICAgICAgICAgICAgIDwvaDM+CiAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5LTYwMCI+CiAgICAgICAgICAgICAgICAgIENyYWZ0aW5nIGJlc3Bva2Ugd2ViIHNvbHV0aW9ucyB0YWlsb3JlZCB0byB5b3VyIHVuaXF1ZQogICAgICAgICAgICAgICAgICBidXNpbmVzcyBuZWVkcy4gRnJvbSBlLWNvbW1lcmNlIHRvIGVudGVycHJpc2UgYXBwbGljYXRpb25zLAogICAgICAgICAgICAgICAgICB3ZSd2ZSBnb3QgeW91IGNvdmVyZWQuCiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmctYmx1ZS0xMDAgcC00IHRleHQtcmlnaHQiPgogICAgICAgICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3M9InRleHQtYmx1ZS02MDAgaG92ZXI6dGV4dC1ibHVlLTgwMCBmb250LW1lZGl1bSI+TGVhcm4gTW9yZSDihpI8L2E+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPCEtLSBTZXJ2aWNlIEl0ZW0gMiAtLT4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmctd2hpdGUgcm91bmRlZC14bCBzaGFkb3ctbWQgb3ZlcmZsb3ctaGlkZGVuIGhvdmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9uLXNoYWRvdyBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9InAtNiI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0ZXh0LWdyZWVuLTYwMCB0ZXh0LTR4bCBtYi00Ij4KICAgICAgICAgICAgICAgICAgPGkgY2xhc3M9ImZhcyBmYS1jaGFydC1saW5lIj48L2k+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0idGV4dC14bCBmb250LXNlbWlib2xkIHRleHQtZ3JheS04MDAgbWItMiI+CiAgICAgICAgICAgICAgICAgIERpZ2l0YWwgTWFya2V0aW5nCiAgICAgICAgICAgICAgICA8L2gzPgogICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS02MDAiPgogICAgICAgICAgICAgICAgICBEYXRhLWRyaXZlbiBzdHJhdGVnaWVzIHRvIGVsZXZhdGUgeW91ciBvbmxpbmUgcHJlc2VuY2UuIFNFTywKICAgICAgICAgICAgICAgICAgc29jaWFsIG1lZGlhLCBhbmQgdGFyZ2V0ZWQgYWR2ZXJ0aXNpbmcgdG8gZHJpdmUgZ3Jvd3RoIGFuZAogICAgICAgICAgICAgICAgICBlbmdhZ2VtZW50LgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLWdyZWVuLTEwMCBwLTQgdGV4dC1yaWdodCI+CiAgICAgICAgICAgICAgICA8YSBocmVmPSIjIiBjbGFzcz0idGV4dC1ncmVlbi02MDAgaG92ZXI6dGV4dC1ncmVlbi04MDAgZm9udC1tZWRpdW0iPkxlYXJuIE1vcmUg4oaSPC9hPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDwhLS0gU2VydmljZSBJdGVtIDMgLS0+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQteGwgc2hhZG93LW1kIG92ZXJmbG93LWhpZGRlbiBob3ZlcjpzaGFkb3ctbGcgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJwLTYiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1wdXJwbGUtNjAwIHRleHQtNHhsIG1iLTQiPgogICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLXBhbGV0dGUiPjwvaT4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTgwMCBtYi0yIj4KICAgICAgICAgICAgICAgICAgQnJhbmRpbmcKICAgICAgICAgICAgICAgIDwvaDM+CiAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5LTYwMCI+CiAgICAgICAgICAgICAgICAgIENyZWF0aW5nIGEgdW5pcXVlIGJyYW5kIGlkZW50aXR5IHRoYXQgcmVzb25hdGVzIHdpdGggeW91cgogICAgICAgICAgICAgICAgICBhdWRpZW5jZS4gTG9nbyBkZXNpZ24sIGJyYW5kIGd1aWRlbGluZXMsIGFuZCB2aXN1YWwKICAgICAgICAgICAgICAgICAgc3Rvcnl0ZWxsaW5nLgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLXB1cnBsZS0xMDAgcC00IHRleHQtcmlnaHQiPgogICAgICAgICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3M9InRleHQtcHVycGxlLTYwMCBob3Zlcjp0ZXh0LXB1cnBsZS04MDAgZm9udC1tZWRpdW0iPkxlYXJuIE1vcmUg4oaSPC9hPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDwhLS0gU2VydmljZSBJdGVtIDQgLS0+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQteGwgc2hhZG93LW1kIG92ZXJmbG93LWhpZGRlbiBob3ZlcjpzaGFkb3ctbGcgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJwLTYiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1vcmFuZ2UtNjAwIHRleHQtNHhsIG1iLTQiPgogICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLXVzZXItaW50ZXJmYWNlIj48L2k+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0idGV4dC14bCBmb250LXNlbWlib2xkIHRleHQtZ3JheS04MDAgbWItMiI+CiAgICAgICAgICAgICAgICAgIFVYL1VJIERlc2lnbgogICAgICAgICAgICAgICAgPC9oMz4KICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LWdyYXktNjAwIj4KICAgICAgICAgICAgICAgICAgSW50dWl0aXZlIGFuZCBlbmdhZ2luZyB1c2VyIGV4cGVyaWVuY2VzIHRoYXQgZHJpdmUgcmVzdWx0cy4KICAgICAgICAgICAgICAgICAgVXNlciByZXNlYXJjaCwgd2lyZWZyYW1pbmcsIGFuZCBwaXhlbC1wZXJmZWN0IGRlc2lnbi4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiZy1vcmFuZ2UtMTAwIHAtNCB0ZXh0LXJpZ2h0Ij4KICAgICAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzPSJ0ZXh0LW9yYW5nZS02MDAgaG92ZXI6dGV4dC1vcmFuZ2UtODAwIGZvbnQtbWVkaXVtIj5MZWFybiBNb3JlIOKGkjwvYT4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9zZWN0aW9uPgoKICAgICAgPCEtLSBJbnRlcmFjdGl2ZSBEZW1vL1BvcnRmb2xpbyBQcmV2aWV3IC0tPgogICAgICA8c2VjdGlvbiBjbGFzcz0icHktMTYgYmctZ3JheS0xMDAiPgogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciBteC1hdXRvIHB4LTQiPgogICAgICAgICAgPGgyIGNsYXNzPSJ0ZXh0LTN4bCBmb250LXNlbWlib2xkIHRleHQtZ3JheS04MDAgbWItMTIgdGV4dC1jZW50ZXIiPgogICAgICAgICAgICBSZWNlbnQgUHJvamVjdHMKICAgICAgICAgIDwvaDI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy0zIGdhcC04Ij4KICAgICAgICAgICAgPCEtLSBQcm9qZWN0IEl0ZW0gMSAtLT4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQteGwgc2hhZG93LW1kIGhvdmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9uLXNoYWRvdyBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8zOTI4OC9yb2NrZXQtbGF1bmNoLXNwYWNlLW5hc2EtMzkyODguanBlZz9hdXRvPWNvbXByZXNzJmFtcDtjcz10aW55c3JnYiZhbXA7dz0xMjYwJmFtcDtoPTc1MCZhbXA7ZHByPTIiIGFsdD0iUHJvamVjdCAxIiBjbGFzcz0idy1mdWxsIGgtNjQgb2JqZWN0LWNvdmVyIG9iamVjdC1jZW50ZXIgdHJhbnNmb3JtIGhvdmVyOnNjYWxlLTExMCB0cmFuc2l0aW9uLXRyYW5zZm9ybSBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tdCBmcm9tLWJsYWNrIHRvLXRyYW5zcGFyZW50IG9wYWNpdHktNjAgaG92ZXI6b3BhY2l0eS04MCB0cmFuc2l0aW9uLW9wYWNpdHkgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFic29sdXRlIGJvdHRvbS00IGxlZnQtNCB0ZXh0LXdoaXRlIj4KICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtc2VtaWJvbGQiPlNwYWNlIEV4cGxvcmF0aW9uPC9oMz4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20iPklubm92YXRpdmUgUm9ja2V0IERlc2lnbjwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDwhLS0gUHJvamVjdCBJdGVtIDIgLS0+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InJlbGF0aXZlIG92ZXJmbG93LWhpZGRlbiByb3VuZGVkLXhsIHNoYWRvdy1tZCBob3ZlcjpzaGFkb3ctbGcgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIG1kOmNvbC1zcGFuLTIiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8zNzI3NDU4L3BleGVscy1waG90by0zNzI3NDU4LmpwZWc/YXV0bz1jb21wcmVzcyZhbXA7Y3M9dGlueXNyZ2ImYW1wO3c9MTI2MCZhbXA7aD03NTAmYW1wO2Rwcj0yIiBhbHQ9IlByb2plY3QgMiIgY2xhc3M9InctZnVsbCBoLTk2IG9iamVjdC1jb3ZlciBvYmplY3QtY2VudGVyIHRyYW5zZm9ybSBob3ZlcjpzY2FsZS0xMTAgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhYnNvbHV0ZSBpbnNldC0wIGJnLWdyYWRpZW50LXRvLXQgZnJvbS1ibGFjayB0by10cmFuc3BhcmVudCBvcGFjaXR5LTYwIGhvdmVyOm9wYWNpdHktODAgdHJhbnNpdGlvbi1vcGFjaXR5IGR1cmF0aW9uLTMwMCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhYnNvbHV0ZSBib3R0b20tNCBsZWZ0LTQgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAgICAgIDxoMyBjbGFzcz0idGV4dC0yeGwgZm9udC1zZW1pYm9sZCI+VXJiYW4gQXJjaGl0ZWN0dXJlPC9oMz4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20iPk1vZGVybiBDaXR5IFBsYW5uaW5nPC9wPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPCEtLSBQcm9qZWN0IEl0ZW0gMyAtLT4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQteGwgc2hhZG93LW1kIGhvdmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9uLXNoYWRvdyBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8yNjEwOTMvcGV4ZWxzLXBob3RvLTI2MTA5My5qcGVnP2F1dG89Y29tcHJlc3MmYW1wO2NzPXRpbnlzcmdiJmFtcDt3PTEyNjAmYW1wO2g9NzUwJmFtcDtkcHI9MiIgYWx0PSJQcm9qZWN0IDMiIGNsYXNzPSJ3LWZ1bGwgaC02NCBvYmplY3QtY292ZXIgb2JqZWN0LWNlbnRlciB0cmFuc2Zvcm0gaG92ZXI6c2NhbGUtMTEwIHRyYW5zaXRpb24tdHJhbnNmb3JtIGR1cmF0aW9uLTMwMCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by10IGZyb20tYmxhY2sgdG8tdHJhbnNwYXJlbnQgb3BhY2l0eS02MCBob3ZlcjpvcGFjaXR5LTgwIHRyYW5zaXRpb24tb3BhY2l0eSBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgYm90dG9tLTQgbGVmdC00IHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9InRleHQteGwgZm9udC1zZW1pYm9sZCI+TmF0dXJlIFBob3RvZ3JhcGh5PC9oMz4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20iPkNhcHR1cmluZyBFYXJ0aCdzIEJlYXV0eTwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDwhLS0gUHJvamVjdCBJdGVtIDQgLS0+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InJlbGF0aXZlIG92ZXJmbG93LWhpZGRlbiByb3VuZGVkLXhsIHNoYWRvdy1tZCBob3ZlcjpzaGFkb3ctbGcgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9pbWFnZXMucGV4ZWxzLmNvbS9waG90b3MvMzc2OTAyMS9wZXhlbHMtcGhvdG8tMzc2OTAyMS5qcGVnP2F1dG89Y29tcHJlc3MmYW1wO2NzPXRpbnlzcmdiJmFtcDt3PTEyNjAmYW1wO2g9NzUwJmFtcDtkcHI9MiIgYWx0PSJQcm9qZWN0IDQiIGNsYXNzPSJ3LWZ1bGwgaC02NCBvYmplY3QtY292ZXIgb2JqZWN0LWNlbnRlciB0cmFuc2Zvcm0gaG92ZXI6c2NhbGUtMTEwIHRyYW5zaXRpb24tdHJhbnNmb3JtIGR1cmF0aW9uLTMwMCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by10IGZyb20tYmxhY2sgdG8tdHJhbnNwYXJlbnQgb3BhY2l0eS02MCBob3ZlcjpvcGFjaXR5LTgwIHRyYW5zaXRpb24tb3BhY2l0eSBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgYm90dG9tLTQgbGVmdC00IHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9InRleHQteGwgZm9udC1zZW1pYm9sZCI+QWJzdHJhY3QgQXJ0PC9oMz4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20iPkNyZWF0aXZlIERpZ2l0YWwgRGVzaWduczwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICA8IS0tIFRlc3RpbW9uaWFscyAmIENsaWVudCBSZXZpZXdzIC0tPgogICAgICA8c2VjdGlvbiBjbGFzcz0icHktMTYgYmctZ3JheS01MCI+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9InB5LTIwIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tZ3JheS0xMDAgdG8tZ3JheS0yMDAiPgogICAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8gcHgtNCI+CiAgICAgICAgICAgIDxoMiBjbGFzcz0idGV4dC0zeGwgZm9udC1leHRyYWJvbGQgdGV4dC1ncmF5LTgwMCBtYi0xNiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgV2hhdCBPdXIgQ2xpZW50cyBTYXkKICAgICAgICAgICAgPC9oMj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0icmVsYXRpdmUiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMgZ2FwLTgiPgogICAgICAgICAgICAgICAgPCEtLSBUZXN0aW1vbmlhbCBDYXJkIDEgLS0+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyZWxhdGl2ZSBiZy13aGl0ZSByb3VuZGVkLTN4bCBzaGFkb3cteGwgcC04IG92ZXJmbG93LWhpZGRlbiBob3ZlcjpzaGFkb3ctMnhsIHRyYW5zaXRpb24tc2hhZG93IGR1cmF0aW9uLTMwMCI+CiAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy83NzE3NDIvcGV4ZWxzLXBob3RvLTc3MTc0Mi5qcGVnP2F1dG89Y29tcHJlc3MmYW1wO2NzPXRpbnlzcmdiJmFtcDt3PTEyNjAmYW1wO2g9NzUwJmFtcDtkcHI9MiIgYWx0PSJDbGllbnQgMSIgY2xhc3M9ImFic29sdXRlIHRvcC0wIGxlZnQtMCB3LWZ1bGwgaC00OCBvYmplY3QtY292ZXIgb2JqZWN0LWNlbnRlciByb3VuZGVkLXQtM3hsIj4KICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibXQtNDgiPgogICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LWdyYXktNzAwIGl0YWxpYyBtYi00Ij4KICAgICAgICAgICAgICAgICAgICAgICJUaGVpciBpbm5vdmF0aXZlIHNvbHV0aW9ucyBhbmQgZGVkaWNhdGlvbiB0byBjdXN0b21lcgogICAgICAgICAgICAgICAgICAgICAgc2F0aXNmYWN0aW9uIGFyZSB0cnVseSByZW1hcmthYmxlLiBEaWdpdGFsWCBleGNlZWRlZCBvdXIKICAgICAgICAgICAgICAgICAgICAgIGV4cGVjdGF0aW9ucyBpbiBldmVyeSB3YXkuIgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBtdC00Ij4KICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8xMDQzNDc0L3BleGVscy1waG90by0xMDQzNDc0LmpwZWc/YXV0bz1jb21wcmVzcyZhbXA7Y3M9dGlueXNyZ2ImYW1wO3c9MTI2MCZhbXA7aD03NTAmYW1wO2Rwcj0yIiBhbHQ9IkpvaG4gRG9lIiBjbGFzcz0idy0xMiBoLTEyIHJvdW5kZWQtZnVsbCBtci00Ij4KICAgICAgICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ibHVlLTYwMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgSm9obiBEb2UKICAgICAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC14cyB0ZXh0LWdyYXktNTAwIj5DRU8sIEFjbWUgQ29ycDwvcD4KICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgIDwhLS0gVGVzdGltb25pYWwgQ2FyZCAyIC0tPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icmVsYXRpdmUgYmctd2hpdGUgcm91bmRlZC0zeGwgc2hhZG93LXhsIHAtOCBvdmVyZmxvdy1oaWRkZW4gaG92ZXI6c2hhZG93LTJ4bCB0cmFuc2l0aW9uLXNoYWRvdyBkdXJhdGlvbi0zMDAgbWQ6Y29sLXNwYW4tMiI+CiAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8zMTg0NDA1L3BleGVscy1waG90by0zMTg0NDA1LmpwZWc/YXV0bz1jb21wcmVzcyZhbXA7Y3M9dGlueXNyZ2ImYW1wO3c9MTI2MCZhbXA7aD03NTAmYW1wO2Rwcj0yIiBhbHQ9IkNsaWVudCAyIiBjbGFzcz0iYWJzb2x1dGUgdG9wLTAgbGVmdC0wIHctZnVsbCBoLTY0IG9iamVjdC1jb3ZlciBvYmplY3QtY2VudGVyIHJvdW5kZWQtdC0zeGwiPgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtdC02NCI+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS03MDAgaXRhbGljIG1iLTQiPgogICAgICAgICAgICAgICAgICAgICAgIkRpZ2l0YWxYJ3MgZXhwZXJ0aXNlIGluIGRpZ2l0YWwgbWFya2V0aW5nIHRyYW5zZm9ybWVkIG91cgogICAgICAgICAgICAgICAgICAgICAgYnVzaW5lc3MuIFRoZWlyIHN0cmF0ZWdpYyBhcHByb2FjaCBhbmQgY3JlYXRpdmUgY2FtcGFpZ25zCiAgICAgICAgICAgICAgICAgICAgICBkZWxpdmVyZWQgb3V0c3RhbmRpbmcgcmVzdWx0cy4iCiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIG10LTQiPgogICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vaW1hZ2VzLnBleGVscy5jb20vcGhvdG9zLzczMzc0NS9wZXhlbHMtcGhvdG8tNzMzNzQ1LmpwZWc/YXV0bz1jb21wcmVzcyZhbXA7Y3M9dGlueXNyZ2ImYW1wO3c9MTI2MCZhbXA7aD03NTAmYW1wO2Rwcj0yIiBhbHQ9IkphbmUgU21pdGgiIGNsYXNzPSJ3LTEyIGgtMTIgcm91bmRlZC1mdWxsIG1yLTQiPgogICAgICAgICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWJsdWUtNjAwIj4KICAgICAgICAgICAgICAgICAgICAgICAgICBKYW5lIFNtaXRoCiAgICAgICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQteHMgdGV4dC1ncmF5LTUwMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgTWFya2V0aW5nIERpcmVjdG9yLCBCZXRhIEluYwogICAgICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICA8IS0tIFRlc3RpbW9uaWFsIENhcmQgMyAtLT4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InJlbGF0aXZlIGJnLXdoaXRlIHJvdW5kZWQtM3hsIHNoYWRvdy14bCBwLTggb3ZlcmZsb3ctaGlkZGVuIGhvdmVyOnNoYWRvdy0yeGwgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vaW1hZ2VzLnBleGVscy5jb20vcGhvdG9zLzM4NjE5NjkvcGV4ZWxzLXBob3RvLTM4NjE5NjkuanBlZz9hdXRvPWNvbXByZXNzJmFtcDtjcz10aW55c3JnYiZhbXA7dz0xMjYwJmFtcDtoPTc1MCZhbXA7ZHByPTIiIGFsdD0iQ2xpZW50IDMiIGNsYXNzPSJhYnNvbHV0ZSB0b3AtMCBsZWZ0LTAgdy1mdWxsIGgtNDggb2JqZWN0LWNvdmVyIG9iamVjdC1jZW50ZXIgcm91bmRlZC10LTN4bCI+CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im10LTQ4Ij4KICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5LTcwMCBpdGFsaWMgbWItNCI+CiAgICAgICAgICAgICAgICAgICAgICAiV2Ugd2VyZSBpbXByZXNzZWQgYnkgRGlnaXRhbFgncyBhYmlsaXR5IHRvIHVuZGVyc3RhbmQgb3VyCiAgICAgICAgICAgICAgICAgICAgICB2aXNpb24gYW5kIHRyYW5zbGF0ZSBpdCBpbnRvIGEgc3R1bm5pbmcgd2Vic2l0ZS4gVGhlaXIKICAgICAgICAgICAgICAgICAgICAgIGF0dGVudGlvbiB0byBkZXRhaWwgaXMgdW5tYXRjaGVkLiIKICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBpdGVtcy1jZW50ZXIgbXQtNCI+CiAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9pbWFnZXMucGV4ZWxzLmNvbS9waG90b3MvOTEyMjc0L3BleGVscy1waG90by05MTIyNzQuanBlZz9hdXRvPWNvbXByZXNzJmFtcDtjcz10aW55c3JnYiZhbXA7dz0xMjYwJmFtcDtoPTc1MCZhbXA7ZHByPTIiIGFsdD0iTWljaGFlbCBCcm93biIgY2xhc3M9InctMTIgaC0xMiByb3VuZGVkLWZ1bGwgbXItNCI+CiAgICAgICAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtYmx1ZS02MDAiPgogICAgICAgICAgICAgICAgICAgICAgICAgIE1pY2hhZWwgQnJvd24KICAgICAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC14cyB0ZXh0LWdyYXktNTAwIj5Gb3VuZGVyLCBHYW1tYSBMdGQ8L3A+CiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDwhLS0gUHJpY2luZyAmIFBhY2thZ2VzIC0tPgogICAgICA8c2VjdGlvbiBjbGFzcz0icHJpY2luZyBtdC0xMiI+CiAgICAgICAgPGgyIGNsYXNzPSJ0ZXh0LTN4bCBmb250LXNlbWlib2xkIHRleHQtZ3JheS04MDAgbWItNiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICBQcmljaW5nICZhbXA7IFBhY2thZ2VzCiAgICAgICAgPC9oMj4KICAgICAgICA8ZGl2IGNsYXNzPSJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0zIGdhcC04Ij4KICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQtbGcgc2hhZG93LW1kIHAtNiBob3ZlcjpzaGFkb3ctbGcgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtc2VtaWJvbGQgdGV4dC1ibHVlLTcwMCBtYi0yIj5CYXNpYzwvaDM+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LWdyYXktNjAwIj5Fc3NlbnRpYWwgZmVhdHVyZXMgZm9yIHN0YXJ0dXBzLjwvcD4KICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LWJsdWUtODAwIj4kOTkvbW9udGg8L3A+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQtbGcgc2hhZG93LW1kIHAtNiBob3ZlcjpzaGFkb3ctbGcgdHJhbnNpdGlvbi1zaGFkb3cgZHVyYXRpb24tMzAwIj4KICAgICAgICAgICAgPGgzIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtc2VtaWJvbGQgdGV4dC1ibHVlLTcwMCBtYi0yIj5TdGFuZGFyZDwvaDM+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LWdyYXktNjAwIj4KICAgICAgICAgICAgICBDb21wcmVoZW5zaXZlIHNvbHV0aW9ucyBmb3IgZ3Jvd2luZyBidXNpbmVzc2VzLgogICAgICAgICAgICA8L3A+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC1ibHVlLTgwMCI+JDI5OS9tb250aDwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iYmctd2hpdGUgcm91bmRlZC1sZyBzaGFkb3ctbWQgcC02IGhvdmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9uLXNoYWRvdyBkdXJhdGlvbi0zMDAiPgogICAgICAgICAgICA8aDMgY2xhc3M9InRleHQteGwgZm9udC1zZW1pYm9sZCB0ZXh0LWJsdWUtNzAwIG1iLTIiPlByZW1pdW08L2gzPgogICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5LTYwMCI+CiAgICAgICAgICAgICAgQWR2YW5jZWQgZmVhdHVyZXMgYW5kIGRlZGljYXRlZCBzdXBwb3J0LgogICAgICAgICAgICA8L3A+CiAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC1ibHVlLTgwMCI+JDU5OS9tb250aDwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICA8IS0tIEFib3V0ICYgTWlzc2lvbiAtLT4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImFib3V0IG10LTEyIj4KICAgICAgICA8aDIgY2xhc3M9InRleHQtM3hsIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTgwMCBtYi02IHRleHQtY2VudGVyIj4KICAgICAgICAgIEFib3V0IERpZ2l0YWxYCiAgICAgICAgPC9oMj4KICAgICAgICA8ZGl2IGNsYXNzPSJiZy13aGl0ZSByb3VuZGVkLWxnIHNoYWRvdy1tZCBwLTgiPgogICAgICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS03MDAiPgogICAgICAgICAgICBEaWdpdGFsWCBpcyBhIGN1dHRpbmctZWRnZSBkaWdpdGFsIGFnZW5jeSBkZWRpY2F0ZWQgdG8gcHJvdmlkaW5nCiAgICAgICAgICAgIGlubm92YXRpdmUgc29sdXRpb25zIGFuZCBwZXJzb25hbGl6ZWQgc3RyYXRlZ2llcyB0byBoZWxwIGJ1c2luZXNzZXMKICAgICAgICAgICAgdGhyaXZlIGluIHRoZSBkaWdpdGFsIGFnZS4gT3VyIG1pc3Npb24gaXMgdG8gdHJhbnNmb3JtIHlvdXIgZGlnaXRhbAogICAgICAgICAgICBwcmVzZW5jZSBhbmQgZHJpdmUgc3VzdGFpbmFibGUgZ3Jvd3RoLgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICA8IS0tIEZBUSBTZWN0aW9uIC0tPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZmFxIG10LTEyIj4KICAgICAgICA8aDIgY2xhc3M9InRleHQtM3hsIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTgwMCBtYi02IHRleHQtY2VudGVyIj4KICAgICAgICAgIEZyZXF1ZW50bHkgQXNrZWQgUXVlc3Rpb25zCiAgICAgICAgPC9oMj4KICAgICAgICA8ZGl2IGNsYXNzPSJiZy13aGl0ZSByb3VuZGVkLWxnIHNoYWRvdy1tZCBwLTgiPgogICAgICAgICAgPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJhY2NvcmRpb24tYnV0dG9uIj4KICAgICAgICAgICAgICBXaGF0IHNlcnZpY2VzIGRvIHlvdSBvZmZlcj88c3BhbiBjbGFzcz0idGV4dC14bCI+Kzwvc3Bhbj4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFjY29yZGlvbi1jb250ZW50Ij4KICAgICAgICAgICAgICBXZSBvZmZlciBhIHdpZGUgcmFuZ2Ugb2YgZGlnaXRhbCBzZXJ2aWNlcywgaW5jbHVkaW5nIHdlYgogICAgICAgICAgICAgIGRldmVsb3BtZW50LCBkaWdpdGFsIG1hcmtldGluZywgYnJhbmRpbmcsIGFuZCBVWC9VSSBkZXNpZ24uCiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJhY2NvcmRpb24taXRlbSI+CiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24iPgogICAgICAgICAgICAgIEhvdyBkbyB5b3UgYXBwcm9hY2ggYSBuZXcgcHJvamVjdD88c3BhbiBjbGFzcz0idGV4dC14bCI+Kzwvc3Bhbj4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFjY29yZGlvbi1jb250ZW50Ij4KICAgICAgICAgICAgICBXZSBzdGFydCB3aXRoIGEgdGhvcm91Z2ggdW5kZXJzdGFuZGluZyBvZiB5b3VyIGJ1c2luZXNzIGdvYWxzIGFuZAogICAgICAgICAgICAgIHRhcmdldCBhdWRpZW5jZSwgdGhlbiBkZXZlbG9wIGEgY3VzdG9taXplZCBzdHJhdGVneSB0byBhY2hpZXZlCiAgICAgICAgICAgICAgeW91ciBvYmplY3RpdmVzLgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJhY2NvcmRpb24tYnV0dG9uIj4KICAgICAgICAgICAgICBXaGF0IGlzIHlvdXIgcHJpY2luZyBzdHJ1Y3R1cmU/PHNwYW4gY2xhc3M9InRleHQteGwiPis8L3NwYW4+CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJhY2NvcmRpb24tY29udGVudCI+CiAgICAgICAgICAgICAgV2Ugb2ZmZXIgZmxleGlibGUgcHJpY2luZyBwYWNrYWdlcyB0YWlsb3JlZCB0byB5b3VyIHNwZWNpZmljIG5lZWRzCiAgICAgICAgICAgICAgYW5kIGJ1ZGdldC4gQ29udGFjdCB1cyBmb3IgYSBwZXJzb25hbGl6ZWQgcXVvdGUuCiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDwhLS0gRmluYWwgQ1RBICYgQ29udGFjdCAtLT4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImNvbnRhY3QgbXQtMTIiPgogICAgICAgIDxoMiBjbGFzcz0idGV4dC0zeGwgZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktODAwIG1iLTYgdGV4dC1jZW50ZXIiPgogICAgICAgICAgUmVhZHkgdG8gVHJhbnNmb3JtIFlvdXIgRGlnaXRhbCBQcmVzZW5jZT8KICAgICAgICA8L2gyPgogICAgICAgIDxkaXYgY2xhc3M9InRleHQtY2VudGVyIj4KICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzPSJjdGEtYnV0dG9uIGJnLWJsdWUtNTAwIGhvdmVyOmJnLWJsdWUtNzAwIHRleHQtd2hpdGUgcHktMyBweC02IHJvdW5kZWQtbWQgaW5saW5lLWJsb2NrIj5SZXF1ZXN0IGEgUXVvdGU8L2E+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvbWFpbj4KCiAgICA8Zm9vdGVyIGNsYXNzPSJiZy1ncmF5LTIwMCBtdC0xMiBweS00IHRleHQtY2VudGVyIj4KICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8iPgogICAgICAgIDxuYXYgY2xhc3M9Im1iLTIiPgogICAgICAgICAgPHVsIGNsYXNzPSJmbGV4IGp1c3RpZnktY2VudGVyIHNwYWNlLXgtNiI+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSIjIiBjbGFzcz0iaG92ZXI6dGV4dC1ibHVlLTUwMCI+SG9tZTwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iIyIgY2xhc3M9ImhvdmVyOnRleHQtYmx1ZS01MDAiPlNlcnZpY2VzPC9hPjwvbGk+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSIjIiBjbGFzcz0iaG92ZXI6dGV4dC1ibHVlLTUwMCI+QmxvZzwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iIyIgY2xhc3M9ImhvdmVyOnRleHQtYmx1ZS01MDAiPkNvbnRhY3Q8L2E+PC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9uYXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZmxleCBqdXN0aWZ5LWNlbnRlciBzcGFjZS14LTQiPgogICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3M9ImhvdmVyOnRleHQtYmx1ZS01MDAiPjxpIGNsYXNzPSJmYWIgZmEtZmFjZWJvb2siPjwvaT48L2E+CiAgICAgICAgICA8YSBocmVmPSIjIiBjbGFzcz0iaG92ZXI6dGV4dC1ibHVlLTUwMCI+PGkgY2xhc3M9ImZhYiBmYS10d2l0dGVyIj48L2k+PC9hPgogICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3M9ImhvdmVyOnRleHQtYmx1ZS01MDAiPjxpIGNsYXNzPSJmYWIgZmEtbGlua2VkaW4iPjwvaT48L2E+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS02MDAgbXQtMiI+wqkgMjAyMyBEaWdpdGFsWC4gQWxsIHJpZ2h0cyByZXNlcnZlZC48L3A+CiAgICAgIDwvZGl2PgogICAgPC9mb290ZXI+CgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8va2l0LmZvbnRhd2Vzb21lLmNvbS9hMDc2ZDA1Mzk5LmpzIiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQ+CiAgICAgIGNvbnN0IGFjY29yZGlvbkJ1dHRvbnMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcuYWNjb3JkaW9uLWJ1dHRvbicpOwoKICAgICAgYWNjb3JkaW9uQnV0dG9ucy5mb3JFYWNoKGJ1dHRvbiA9JmFtcDthbXA7YW1wO2FtcDthbXA7YW1wO2FtcDthbXA7YW1wO2d0OyB7CiAgICAgICAgICBidXR0b24uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9JmFtcDthbXA7YW1wO2FtcDthbXA7YW1wO2FtcDthbXA7YW1wO2d0OyB7CiAgICAgICAgICAgICAgYnV0dG9uLmNsYXNzTGlzdC50b2dnbGUoJ2FjdGl2ZScpOwogICAgICAgICAgfSk7CiAgICAgIH0pOwogICAgPC9zY3JpcHQ+CiAgCgo8L2JvZHk+PC9odG1sPg==
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalX - Transforming Your Digital Presence</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+      /* Custom CSS for animations and effects */
+      .hero-gradient {
+          background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+      }
+      .cta-button {
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      .cta-button:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .service-icon {
+          transition: transform 0.3s ease-in-out;
+      }
+      .service-item:hover .service-icon {
+          transform: translateY(-5px);
+      }
+      .testimonial-card {
+          animation: fadeIn 0.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+      .accordion-item {
+          border-bottom: 1px solid #e5e7eb;
+      }
+      .accordion-button {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+          text-align: left;
+          background-color: #f9fafb;
+          color: #374151;
+          font-weight: 600;
+          border: none;
+          outline: none;
+          cursor: pointer;
+      }
+      .accordion-button:hover {
+          background-color: #edf2f7;
+      }
+      .accordion-content {
+          padding: 1rem;
+          background-color: #fff;
+          color: #6b7280;
+          display: none;
+      }
+      .accordion-button.active + .accordion-content {
+          display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto py-4 px-5 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-blue-600">DigitalX</a>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">About</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-10">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-r from-purple-500 to-blue-500 text-white py-24 px-8 rounded-3xl shadow-2xl overflow-hidden relative">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="z-10">
+            <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
+              Elevate Your Brand with Digital Excellence
+            </h1>
+            <p class="text-xl mb-8 leading-relaxed">
+              We craft innovative digital solutions tailored to your unique
+              needs, driving growth and engagement.
+            </p>
+            <a href="#" class="bg-white text-purple-600 font-semibold py-3 px-6 rounded-full hover:bg-purple-100 transition-colors duration-300 inline-block shadow-md">Get Started</a>
+          </div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1519389950473-47a04ca0052d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt="Modern Digital Interface" class="rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-blue-500 opacity-20 rounded-3xl"></div>
+          </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-blue-500 to-transparent"></div>
+      </section>
+
+      <!-- Features & Services -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-12 text-center">
+            Our Services
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service Item 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="p-6">
+                <div class="text-blue-600 text-4xl mb-4">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Web Development
+                </h3>
+                <p class="text-gray-600">
+                  Crafting bespoke web solutions tailored to your unique
+                  business needs. From e-commerce to enterprise applications,
+                  we've got you covered.
+                </p>
+              </div>
+              <div class="bg-blue-100 p-4 text-right">
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+              </div>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="p-6">
+                <div class="text-green-600 text-4xl mb-4">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Digital Marketing
+                </h3>
+                <p class="text-gray-600">
+                  Data-driven strategies to elevate your online presence. SEO,
+                  social media, and targeted advertising to drive growth and
+                  engagement.
+                </p>
+              </div>
+              <div class="bg-green-100 p-4 text-right">
+                <a href="#" class="text-green-600 hover:text-green-800 font-medium">Learn More →</a>
+              </div>
+            </div>
+
+            <!-- Service Item 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="p-6">
+                <div class="text-purple-600 text-4xl mb-4">
+                  <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Branding
+                </h3>
+                <p class="text-gray-600">
+                  Creating a unique brand identity that resonates with your
+                  audience. Logo design, brand guidelines, and visual
+                  storytelling.
+                </p>
+              </div>
+              <div class="bg-purple-100 p-4 text-right">
+                <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Learn More →</a>
+              </div>
+            </div>
+
+            <!-- Service Item 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="p-6">
+                <div class="text-orange-600 text-4xl mb-4">
+                  <i class="fas fa-user-interface"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  UX/UI Design
+                </h3>
+                <p class="text-gray-600">
+                  Intuitive and engaging user experiences that drive results.
+                  User research, wireframing, and pixel-perfect design.
+                </p>
+              </div>
+              <div class="bg-orange-100 p-4 text-right">
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-medium">Learn More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Demo/Portfolio Preview -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-12 text-center">
+            Recent Projects
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Item 1 -->
+            <div class="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+              <img src="https://images.pexels.com/photos/39288/rocket-launch-space-nasa-39288.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Project 1" class="w-full h-64 object-cover object-center transform hover:scale-110 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 hover:opacity-80 transition-opacity duration-300">
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-xl font-semibold">Space Exploration</h3>
+                  <p class="text-sm">Innovative Rocket Design</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Item 2 -->
+            <div class="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 md:col-span-2">
+              <img src="https://images.pexels.com/photos/3727458/pexels-photo-3727458.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Project 2" class="w-full h-96 object-cover object-center transform hover:scale-110 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 hover:opacity-80 transition-opacity duration-300">
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-2xl font-semibold">Urban Architecture</h3>
+                  <p class="text-sm">Modern City Planning</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Item 3 -->
+            <div class="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+              <img src="https://images.pexels.com/photos/261093/pexels-photo-261093.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Project 3" class="w-full h-64 object-cover object-center transform hover:scale-110 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 hover:opacity-80 transition-opacity duration-300">
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-xl font-semibold">Nature Photography</h3>
+                  <p class="text-sm">Capturing Earth's Beauty</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Item 4 -->
+            <div class="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+              <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Project 4" class="w-full h-64 object-cover object-center transform hover:scale-110 transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 hover:opacity-80 transition-opacity duration-300">
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-xl font-semibold">Abstract Art</h3>
+                  <p class="text-sm">Creative Digital Designs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials & Client Reviews -->
+      <section class="py-16 bg-gray-50">
+        <section class="py-20 bg-gradient-to-br from-gray-100 to-gray-200">
+          <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-16 text-center">
+              What Our Clients Say
+            </h2>
+            <div class="relative">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Card 1 -->
+                <div class="relative bg-white rounded-3xl shadow-xl p-8 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                  <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Client 1" class="absolute top-0 left-0 w-full h-48 object-cover object-center rounded-t-3xl">
+                  <div class="mt-48">
+                    <p class="text-gray-700 italic mb-4">
+                      "Their innovative solutions and dedication to customer
+                      satisfaction are truly remarkable. DigitalX exceeded our
+                      expectations in every way."
+                    </p>
+                    <div class="flex items-center mt-4">
+                      <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="John Doe" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                        <p class="text-sm font-semibold text-blue-600">
+                          John Doe
+                        </p>
+                        <p class="text-xs text-gray-500">CEO, Acme Corp</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="relative bg-white rounded-3xl shadow-xl p-8 overflow-hidden hover:shadow-2xl transition-shadow duration-300 md:col-span-2">
+                  <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Client 2" class="absolute top-0 left-0 w-full h-64 object-cover object-center rounded-t-3xl">
+                  <div class="mt-64">
+                    <p class="text-gray-700 italic mb-4">
+                      "DigitalX's expertise in digital marketing transformed our
+                      business. Their strategic approach and creative campaigns
+                      delivered outstanding results."
+                    </p>
+                    <div class="flex items-center mt-4">
+                      <img src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Jane Smith" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                        <p class="text-sm font-semibold text-blue-600">
+                          Jane Smith
+                        </p>
+                        <p class="text-xs text-gray-500">
+                          Marketing Director, Beta Inc
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="relative bg-white rounded-3xl shadow-xl p-8 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                  <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Client 3" class="absolute top-0 left-0 w-full h-48 object-cover object-center rounded-t-3xl">
+                  <div class="mt-48">
+                    <p class="text-gray-700 italic mb-4">
+                      "We were impressed by DigitalX's ability to understand our
+                      vision and translate it into a stunning website. Their
+                      attention to detail is unmatched."
+                    </p>
+                    <div class="flex items-center mt-4">
+                      <img src="https://images.pexels.com/photos/912274/pexels-photo-912274.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="Michael Brown" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                        <p class="text-sm font-semibold text-blue-600">
+                          Michael Brown
+                        </p>
+                        <p class="text-xs text-gray-500">Founder, Gamma Ltd</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Pricing & Packages -->
+      <section class="pricing mt-12">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+          Pricing &amp; Packages
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-xl font-semibold text-blue-700 mb-2">Basic</h3>
+            <p class="text-gray-600">Essential features for startups.</p>
+            <p class="text-2xl font-bold text-blue-800">$99/month</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-xl font-semibold text-blue-700 mb-2">Standard</h3>
+            <p class="text-gray-600">
+              Comprehensive solutions for growing businesses.
+            </p>
+            <p class="text-2xl font-bold text-blue-800">$299/month</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-xl font-semibold text-blue-700 mb-2">Premium</h3>
+            <p class="text-gray-600">
+              Advanced features and dedicated support.
+            </p>
+            <p class="text-2xl font-bold text-blue-800">$599/month</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Mission -->
+      <section class="about mt-12">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+          About DigitalX
+        </h2>
+        <div class="bg-white rounded-lg shadow-md p-8">
+          <p class="text-gray-700">
+            DigitalX is a cutting-edge digital agency dedicated to providing
+            innovative solutions and personalized strategies to help businesses
+            thrive in the digital age. Our mission is to transform your digital
+            presence and drive sustainable growth.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq mt-12">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+          Frequently Asked Questions
+        </h2>
+        <div class="bg-white rounded-lg shadow-md p-8">
+          <div class="accordion-item">
+            <button class="accordion-button">
+              What services do you offer?<span class="text-xl">+</span>
+            </button>
+            <div class="accordion-content">
+              We offer a wide range of digital services, including web
+              development, digital marketing, branding, and UX/UI design.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">
+              How do you approach a new project?<span class="text-xl">+</span>
+            </button>
+            <div class="accordion-content">
+              We start with a thorough understanding of your business goals and
+              target audience, then develop a customized strategy to achieve
+              your objectives.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">
+              What is your pricing structure?<span class="text-xl">+</span>
+            </button>
+            <div class="accordion-content">
+              We offer flexible pricing packages tailored to your specific needs
+              and budget. Contact us for a personalized quote.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA & Contact -->
+      <section class="contact mt-12">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+          Ready to Transform Your Digital Presence?
+        </h2>
+        <div class="text-center">
+          <a href="#" class="cta-button bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 rounded-md inline-block">Request a Quote</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 mt-12 py-4 text-center">
+      <div class="container mx-auto">
+        <nav class="mb-2">
+          <ul class="flex justify-center space-x-6">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">Blog</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-gray-600 mt-2">© 2023 DigitalX. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+      const accordionButtons = document.querySelectorAll('.accordion-button');
+
+      accordionButtons.forEach(button =&amp;amp;amp;amp;amp;amp;amp;amp;amp;gt; {
+          button.addEventListener('click', () =&amp;amp;amp;amp;amp;amp;amp;amp;amp;gt; {
+              button.classList.toggle('active');
+          });
+      });
+    </script>
+  
+
+ </body></html>
